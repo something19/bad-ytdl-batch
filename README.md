@@ -1,2 +1,2 @@
 # bad-ytdl-batch
-some bad youtube-dl batch i made while im bored
+some bad youtube-dl&Spotdlbatch i made while im bored
