@@ -100,13 +100,6 @@ if %Pick%== 8 goto avc720p
 		pause
 	goto subs
 :subs
-		echo Include subs?
-		echo Y
-		echo N
-		CHOICE /c:YN /n
-	IF ERRORLEVEL ==1 goto Dlsub
-	IF ERRORLEVEL ==2 goto start
-:Dlsub
 		youtube-dl --sub-lang en --write-sub -o %viddir%\%%(title)s-%%(id)s.%%(ext)s --skip-download %ytlink%
 		pause
 	goto start
