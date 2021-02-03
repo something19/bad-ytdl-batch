@@ -49,7 +49,7 @@ if %Pick%== 4 goto 1080p
 if %Pick%== 5 goto 1080p60
 if %Pick%== 6 goto 1440p
 if %Pick%== 7 goto 4k
-if %Pick%== 8 goto avc720p
+if %Pick%== 8 goto h264-720p
 
 :Best
 		cls
@@ -63,7 +63,7 @@ if %Pick%== 8 goto avc720p
 		youtube-dl -f 247+251 --merge-output-format mkv -o %viddir%\%%(title)s-%%(id)s.%%(ext)s %ytlink%
 		pause
 	goto subs
-:avc720p 
+:h264-720p 
 		cls
 		Echo Downloading Video
 		Youtube-dl -f 22 --merge-output-format mkv -o %viddir%\%%(title)s-%%(id)s.%%(ext)s %ytlink%
